@@ -1,0 +1,35 @@
+.btnContainer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.btnContainer>p {
+    margin-bottom: 5px;
+    font-family: 'Nunito', sans-serifS;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1818;
+    text-align: center;
+    background: #fb8c8c;
+    border-radius: 5px;
+}
+
+.btnContainer>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+
+
+}
+
+.btnContainer>button>img {
+    width: 40px;
+
+}

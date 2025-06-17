@@ -2,9 +2,20 @@
 
 * {
   box-sizing: border-box;
+
 }
 
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
+}
+
+.leaflet-routing-container {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .leaflet-routing-container {
+    display: none !important;
+  }
 }

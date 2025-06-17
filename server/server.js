@@ -1,14 +1,14 @@
 import express from "express";
 import dotenv from 'dotenv';
 dotenv.config();
-import router from './Config/database.js';
+import router from './Routes/router.js';
 import cors from 'cors';
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use('/api', router);
+app.use('/api/v1', router);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 4000, () => {
 
-    console.log('app is listenong on port 3000....')
+    console.log(`app is listenong on port ${process.env.PORT}....`)
 })
